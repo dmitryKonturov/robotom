@@ -21,9 +21,11 @@
 ~~~~~~~~~~~~~
 
 .. function:: DevicesInfo()
+
    TODO
 
 .. function:: SelfTest()
+
    TODO
 
 
@@ -31,6 +33,7 @@
 ~~~~~~~~~
 
 .. function:: MotorStatus()
+
    TODO
 
 .. function:: CurrentPosition()
@@ -58,6 +61,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. function:: XRaySourceStatus()
+
    TODO
 
 .. function:: PowerOn()
@@ -81,6 +85,7 @@
 ~~~~~~~~
 
 .. function:: ShutterStatus()
+
    TODO
 
 .. function:: OpenShutter(time)
@@ -101,6 +106,7 @@
 ~~~~~~~~
 
 .. function:: DetectorStatus()
+
    TODO
 
 .. function:: GetFrame(exposure)
