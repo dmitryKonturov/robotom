@@ -4,12 +4,12 @@
 Подключение к томографу
     .. code-block:: python
 
-        tomograph = PyTango.DeviceProxy('178.62.211.84:10000/tomo/tomograph/1')
+        tomograph = PyTango.DeviceProxy('46.101.31.93:10000/tomo/tomograph/1')
 
 или прописать в .bashrc (Linux)
     .. code-block:: bash
         
-        export TANGO_HOST=178.62.211.84:10000
+        export TANGO_HOST=46.101.31.93:10000
 
 и подключаться
     .. code-block:: python
@@ -41,7 +41,7 @@
    Возвращает текущее положение двигателя: позицию по горизонтали, по вертикали и угол поворота.
    На данный момент, используется только угол поворота. Остальные значения не важны.
 
-   :rtype: list из трех чисел типа float
+   :rtype: list из трех чисел типа int
 
 
 .. function:: GotoPosition(new_position)
@@ -72,11 +72,13 @@
 
    Переводит источник рентгеновского излучения в состояние CLOSE
 
-.. function:: SetOperatingMode(voltage, current)
+.. function:: SetOperatingMode(new_operating_mode)
 
-   :param voltage: Новое значение напряжения в кВ. 0 <= voltage <= 100
+   :param new_operating_mode: voltage, current
+   :type new_operating_mode: list или tuple 
+   :param voltage: Новое значение напряжения в 0,1 кВ. 20 <= voltage <= 600, т. е. 2,0 кВ <= voltage <= 60,0 кВ
    :type voltage: int 
-   :param current: Новое значение тока в мА. 0 <= current <= 100
+   :param current: Новое значение тока в 0,1 мА. 20 <= current <= 800, т. е. 2,0 мА <= current <= 80,0 мА
    :type current: int
    :raises: 
 
