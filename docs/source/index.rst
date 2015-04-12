@@ -12,6 +12,7 @@ Contents:
    :maxdepth: 2
 
    client
+   Web-interface
 
 Indices and tables
 ==================
