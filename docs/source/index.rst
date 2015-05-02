@@ -12,6 +12,7 @@ Contents:
    :maxdepth: 2
 
    client
+   module_experiment
    Web-interface
 
 Indices and tables
