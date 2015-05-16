@@ -93,14 +93,14 @@
 Атрибуты
 --------
 
-.. attribute:: voltage
+.. attribute:: xraysource_voltage
 
    Напряжение в кВ с точностью до десятых. 2,0 кВ <= voltage <= 60,0 кВ
 
    :type: float
 
 
-.. attribute:: current
+.. attribute:: xraysource_current
 
    Ток в мА с точностью до десятых. 2,0 мА <= current <= 80,0 мА
 
