@@ -11,9 +11,9 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   client
-   module_experiment
-   Web-interface
+   tango-client
+   module-experiment
+   web-interface
 
 Indices and tables
 ==================
