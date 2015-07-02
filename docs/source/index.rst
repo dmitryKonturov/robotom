@@ -13,6 +13,7 @@ Contents:
 
    tango-client
    module-experiment
+   module-storage
    web-interface
 
 Indices and tables
